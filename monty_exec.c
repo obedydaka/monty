@@ -1,3 +1,9 @@
+/*
+ * File name:   monty_exec.c
+ * Authors:     Luis Miguel Vargas
+ *              Robinson Montes
+ */
+
 #include "monty.h"
 
 /**
@@ -13,7 +19,7 @@ int execute(char **token, stack_t **stack, unsigned int line_num)
 {
 	unsigned int i = 0;
 
-	instruction_t op[] = {
+	instruct_t op[] = {
 		{"pall", monty_pall},
 		{"pint", monty_pint},
 		{"pop", monty_pop},
